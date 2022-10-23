@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Upload</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="stylesheet" href="css/photo-page.css" />
+  </head>
+  <body>
+    <section class="main" id="main">
+      <div class="topnav">
+        <div class="logobar">
+          <a href="#"> <img src="images/logo_nikha_2.png" alt="" /></a>
+          <div class="menu">
+            <i id="bar" class="fas fa-bars"></i>
+          </div>
+        </div>
+        <ul class="navbar" id="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Activities</a></li>
+          <li>
+            <a href="#"><i class="fas fa-bell"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </li>
+          <div class="logout">
+           <button>
+            <a href="index.html">Log Out</a> 
+         </button>            
+            </div>
+        </ul>
+      </div>
+
+      <div class="photo">
+         <div class="pic">
+         <img src="images/groom.png" alt="">
+         </div>
+         <input type="file" placeholder="Upload Your Photo"><button>Upload your Photo</button>
+         <p>By Uploading your photo, you will reward as our star member where you can express interest unlimited times & it also helps you to get more and more response from users.</p>
+         <button class="btn btn1">
+          <a href="profile-page.html">Do it Later</a> 
+        </button>
+      </div>
+
+      
+
+      </section>
+
+     
+
+      <script>
+        const nav = document.getElementById("navbar");
+        const bar = document.getElementById("bar");
+
+        if (bar) {
+          bar.addEventListener("click", () => {
+            nav.classList.toggle("active");
+          });
+        }
+      </script>
+    </section>
+  </body>
+</html>

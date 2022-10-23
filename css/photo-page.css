@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+:root{
+  --pink:#FF046F;
+  --violet:#C63BFA;
+  --orange: rgb(236,110,110);
+  --orangered: orangered;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'poppins', sans-serif;
+   
+}
+body{
+   max-width: 1800px;
+   margin: auto;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+
+.main{
+   width: 100%;
+   min-height: 100vh;
+   padding-bottom: 5rem;  
+   height: 100%;
+   /* background: linear-gradient(orangered, rgb(236, 110, 110)); */
+   
+   position: relative;
+}
+
+.topnav{
+   width: 100%;
+  padding: 0 2rem;
+   background-color: #fff;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* padding-top: 0.5rem;
+    padding-bottom: 0.5rem;  */
+    box-shadow: 1px 1px 10px rgb(0,0,0,0.3);
+    /* position: fixed;  */
+    
+}
+.topnav .image{
+   display: flex;
+}
+.topnav img{
+   width: 20%;
+}
+
+
+.topnav #bar{
+   display: none;
+}
+.topnav ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 3rem;
+   padding: 0 3rem;
+}
+.topnav ul li{
+   list-style: none;
+}
+.topnav ul li a{
+   text-decoration: none;
+   color: #333;
+   font-size: 1.5rem;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+.topnav ul li a:hover{
+   color: brown;
+}
+.topnav ul li a img{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+}
+
+.topnav ul li a i{
+   font-size: 2rem;
+}
+@media (max-width:899px){
+     .topnav{
+      width: 100%;
+      
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items:flex-end ;
+      gap: 2rem;
+      padding: 0 2rem;
+   }
+   .topnav .logobar{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+   }
+   .topnav #bar{
+   display: block;
+   font-size: 2.5rem;
+   align-items: center;
+   justify-content: center;
+}
+   .topnav img{
+   width: 50%;
+   
+}
+   .topnav ul{
+   flex-direction: column;
+   gap: 2rem;
+   width: 100%;
+  
+   justify-content: center;
+   align-items: center;
+   display: none;
+   }
+   .topnav ul li{
+      padding: 1rem;
+   }
+   #navbar.active{
+      display: block;
+   }
+
+}
+
+@media (max-width:499px){
+   .topnav{
+      width: 100%;
+      
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items:flex-start ;
+      gap: 2rem;
+      padding: 0 1rem;
+   }
+   .topnav .logobar{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+   }
+   .topnav #bar{
+   display: block;
+   font-size: 2rem;
+   align-items: center;
+   justify-content: center;
+}
+.topnav .image{
+   display: flex;
+}
+   .topnav img{
+   width: 80%;
+   
+}
+   .topnav ul{
+   flex-direction: column;
+   gap: 2rem;
+   width: 100%;
+  
+   justify-content: flex-end;
+   align-items: flex-end;
+   display: none;
+   }
+   .topnav ul li{
+      padding: 1rem;
+   }
+   #navbar.active{
+      display: block;
+   }
+
+}
+
+.photo{
+   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  gap: 2rem;
+}
+.pic{
+   border-radius: 50%;
+}
+button{
+   width: 25rem;
+   height: 4rem;
+   font-size: 2rem;
+   background-color: brown;
+   border: none;
+   outline: none;
+   color: #fff;
+   border-radius: 1rem;
+   cursor: pointer;
+
+}
+
+button a{
+   text-decoration: none;
+   color: #fff;
+    font-size: 1.5rem;
+   font-weight: 600;
+}
+.btn1{
+   background: #333;
+}
+.logout button{
+   padding: 0 1rem;
+   width: 10rem;
+   color: #fff;
+   background: linear-gradient(maroon, red);
+  
+}
+.logout button a{
+   color: #fff;
+}
+p{
+   font-size: 1.5rem;
+   color: brown;
+   font-weight: 600;
+   text-align: center;
+   padding: 0 20rem;
+   line-height: 2rem;
+}
+@media (max-width:999px){
+   p{
+       padding: 0 10rem;
+   }
+}
+@media (max-width:599px){
+   p{
+       padding: 0 2rem;
+       font-size: 1.3rem;
+   }
+}
+
+
+
+
+
+
+
+
+
+

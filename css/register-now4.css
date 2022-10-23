@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+:root{
+  --pink:#FF046F;
+  --violet:#C63BFA;
+  --orange: rgb(236,110,110);
+  --orangered: orangered;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'poppins', sans-serif;
+   
+}
+body{
+   max-width: 1800px;
+   margin: auto;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+
+.main{
+   width: 100%;
+   min-height: 120vh;
+   padding-bottom: 5rem;  
+   height: 100%;
+   background: linear-gradient(orangered, rgb(236, 110, 110));
+   
+}
+
+.topnav{
+   width: 80%;
+   margin: auto;
+   min-height: 10vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 1rem;
+    padding-bottom: 3rem; 
+}
+.topnav img{
+   width: 20%;
+}
+button{
+   font-size: 2rem;
+   padding: 0.5rem 2rem;
+   border-radius: 2rem;
+   border: 3px solid orange;
+   cursor: pointer;
+   
+}
+
+
+.phone{
+   width: 30%;
+   
+   min-height: 50vh;
+   
+   background-color: #fff;
+   border-radius: 2rem;
+   padding: 2rem 2rem;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+.phone h4{
+   font-size: 2rem;
+   text-align: center;
+}
+.phone p{
+   text-align: center;
+   color: green;
+   font-size: 1.5rem;
+   font-weight: 600;
+   margin-top: 1rem;
+}
+.prompt p{
+   text-align: center;
+   color: grey;
+}
+.digit-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.digit-group input{
+	
+		width: 30px;
+		height: 30px;
+		background-color: rgb(57, 10, 10);
+		border: none;
+		line-height: 30px;
+		text-align: center;
+		font-size: 24px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 200;
+		color: white;
+		margin: 0 2px;
+	}
+
+	/* .splitter {
+		padding: 0 5px;
+		color: #000;
+		font-size: 20px;
+     background-color: lime;
+	} */
+
+
+.prompt {
+	margin: 20px 0;
+	font-size: 20px;
+	color: grey;
+}
+.buttons{
+   display: flex;
+   align-items: center;
+  
+   justify-content: space-evenly;
+}
+.buttons .btn{
+   margin-top: 2rem;
+   background-color: brown;
+   border: none;
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 1.5rem;
+}
+.btn1{
+  margin-top: 2rem;
+   background-color: limegreen;
+   border: none;
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 1.5rem;
+}
+.edit p{
+   color: blue;
+   margin-top: 2rem;
+}
+.help p{
+   color: #555;
+   
+}
+
+@media (max-width:999px){
+   .topnav img{
+   width: 30%;
+}
+   .phone{
+   width: 50%;
+   
+   min-height: 40vh;
+   }
+}
+
+@media (max-width:499px){
+   .topnav img{
+   width: 40%;
+}
+   .phone{
+   width: 80%;
+   
+   min-height: 40vh;
+   }
+}

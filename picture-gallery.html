@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="stylesheet" href="css/picture-gallery.css" />
+    
+  </head>
+  <body>
+    <section class="main" id="main">
+      <div class="topnav">
+        <div class="logobar">
+          <a href="#"> <img src="images/logo_nikha_2.png" alt="" /></a>
+          <div class="menu">
+            <i id="bar" class="fas fa-bars"></i>
+          </div>
+        </div>
+        <ul class="navbar" id="navbar">
+          <li><a href="profile-page.html">Home</a></li>
+          <li><a href="#">Activities</a>
+            <ul class="submenu">
+              <li><a href="#">Express Interest</a></li>
+              <li><a href="#">Shortlist</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-bell"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </li>
+           <div class="logout">
+           <button>
+            <a href="index.html">Log Out</a> 
+         </button>            
+            </div>
+        </ul>
+      </div>
+
+      <div class="hero">
+         <div class="left">
+          <div class="top">
+          <img src="images/empty.jfif" alt="">
+          <h5>Name</h5>
+          <h6>Position</h6>
+          <button><a href="profile-page.html"> Form</a> </button>
+          </div>
+          <div class="bottom">
+            <div class="list profile" id="profile">
+               <a href="profile-page.html"><i class="fas fa-user"></i>
+              <h4>Profile</h4></a>
+               <ul class="profile-links">
+                <li><a href="view-my-profile.html">View My Profile</a></li>
+                <li><a href="edit-my-profile.html">Edit My Profile</a></li>
+                <li><a href="add-trust-badge.html">Add Trust Badge</a></li>
+               </ul>
+            </div>
+             <div class="list gallery" id="gallery">
+               <a href="#"><i class="fas fa-users"></i>
+              <h4>Gallery</h4></a>
+               <ul class="gallery-links">
+                <li><a href="picture-gallery.html">Picture Gallery</a></li>
+                
+               </ul>
+            </div>
+             <div class="list payment-information" id="payment-information">
+               <a href="#"><i class="fas fa-users"></i>
+              <h4>Payment Information</h4></a>
+               <ul class="payment-links">
+                <li><a href="my-packages.html">My Packages</a></li>
+                <li><a href="payment-informations.html">Payment Informations</a></li>
+                
+               </ul>
+            </div>
+             <div class="list account-settings">
+               <a href="#"><i class="fas fa-users"></i>
+              <h4>Account Settings</h4></a>
+              <ul class="account-links">
+                <li><a href="change-password.html">Change Password</a></li>
+                <li><a href="notification-settings.html">Notification Settings</a></li>
+                
+               </ul>
+            </div>
+          </div>
+         </div>
+         <div class="right">
+          <h1>Gallery</h1>
+          <div class="images">
+           <div class="image"> 
+            <img src="images/groom.png" alt="">
+            <div class="overlay">
+              <div class="plus">+</div>
+            </div>
+            </div>
+            <div class="image"> 
+            <img src="images/groom.png" alt="">
+            <div class="overlay">
+              <div class="plus">+</div>
+            </div>
+            </div>
+            <div class="image"> 
+            <img src="images/groom.png" alt="">
+            <div class="overlay">
+              <div class="plus">+</div>
+            </div>
+            </div>
+            <div class="image"> 
+            <img src="images/groom.png" alt="">
+            <div class="overlay">
+              <div class="plus">+</div>
+            </div>
+            </div>
+            
+          </div>
+         </div>
+      </div>
+
+      
+
+      </section>
+
+     
+
+      <script>
+        const nav = document.getElementById("navbar");
+        const bar = document.getElementById("bar");
+
+        if (bar) {
+          bar.addEventListener("click", () => {
+            nav.classList.toggle("active");
+          });
+        }
+
+       
+        
+      </script>
+    </section>
+  </body>
+</html>

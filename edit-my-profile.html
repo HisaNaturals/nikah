@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="stylesheet" href="css/edit-my-profile.css" />
+    
+  </head>
+  <body>
+    <section class="main" id="main">
+      <div class="topnav">
+        <div class="logobar">
+          <a href="#"> <img src="images/logo_nikha_2.png" alt="" /></a>
+          <div class="menu">
+            <i id="bar" class="fas fa-bars"></i>
+          </div>
+        </div>
+        <ul class="navbar" id="navbar">
+          <li><a href="profile-page.html">Home</a></li>
+          <li><a href="#">Activities</a>
+            <ul class="submenu">
+              <li><a href="#">Express Interest</a></li>
+              <li><a href="#">Shortlist</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-bell"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </li>
+           <div class="logout">
+           <button>
+            <a href="index.html">Log Out</a> 
+         </button>            
+            </div>
+        </ul>
+      </div>
+
+      <div class="hero">
+        <div class="left">
+          <div class="top">
+          <img src="images/empty.jfif" alt="">
+          <h5>Name</h5>
+          <h6>Position</h6>
+          <button><a href="profile-page.html"> Form</a> </button>
+          </div>
+          <div class="bottom">
+            <div class="list profile" id="profile">
+               <a href="profile-page.html"><i class="fas fa-user"></i>
+              <h4>Profile</h4></a>
+               <ul class="profile-links">
+                <li><a href="view-my-profile.html">View My Profile</a></li>
+                <li><a href="edit-my-profile.html">Edit My Profile</a></li>
+                <li><a href="add-trust-badge.html">Add Trust Badge</a></li>
+               </ul>
+            </div>
+             <div class="list gallery" id="gallery">
+               <a href="#"><i class="fas fa-users"></i>
+              <h4>Gallery</h4></a>
+               <ul class="gallery-links">
+                <li><a href="picture-gallery.html">Picture Gallery</a></li>
+                
+               </ul>
+            </div>
+             <div class="list payment-information" id="payment-information">
+               <a href="#"><i class="fas fa-users"></i>
+              <h4>Payment Information</h4></a>
+               <ul class="payment-links">
+                <li><a href="my-packages.html">My Packages</a></li>
+                <li><a href="payment-informations.html">Payment Informations</a></li>
+                
+               </ul>
+            </div>
+             <div class="list account-settings">
+               <a href="#"><i class="fas fa-users"></i>
+              <h4>Account Settings</h4></a>
+              <ul class="account-links">
+                <li><a href="change-password.html">Change Password</a></li>
+                <li><a href="notification-settings.html">Notification Settings</a></li>
+                
+               </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          
+          <div class="big-box">
+            
+            <div class="about">
+              <div class="name-img">
+                <img src="images/women-small.png" alt="">
+                
+              </div>
+              <div class="about-box">
+                <div class="edit" id="edit">
+                <h2>Introduction</h2>
+                <div id="pen">
+                  <img src="images/pen5.jpg" alt="">
+                </div>
+                </div>
+                <p>
+                <textarea name="introduction" id="introduction" cols="30" rows="10"></textarea>
+                </p>
+              </div>
+            </div>
+            <div class="basic-information">
+              <div class="name-img">
+              <img src="images/i1.webp" alt="">
+              
+              </div>
+                <div class="basic-box">
+                   <div class="edit" id="edit">
+                <h2>Basic details</h2>
+                <div id="pen">
+                  <img src="images/pen5.jpg" alt="">
+                </div>
+                </div>
+                  <div class="AB">
+                              <div class="A">
+                                <div class="name flex">
+                                  <li>Name - Mohammed Saleem</li>
+                                 </div>
+                                <div class="age flex">
+                                  <li>Age - 35 years</li>
+                                 </div>
+                                <div class="height flex">
+                                  <li>Height - 5ft 1in</li>
+                                </div>
+                                 <div class="gender flex">
+                                    <li>Gender - Female</li>
+                                 </div>
+                                 <div class="marital-status flex">
+                                    <li>Marital Status - Never married</li>
+                                 </div>
+                              </div>
+                              <div class="B">
+                                 <div class="sect flex">
+                                    <li>Sect - sunni</li>
+                                 </div>
+                                 <div class="education flex">
+                                    <li>Education - B.Sc</li>
+                                 </div>
+                                 <div class="job flex">
+                                    <li>Job - Private sector</li>
+                                 </div>
+                                 <div class="Complexion flex">
+                                    <li>Complexion - Fair </li>
+                                 </div>
+                                 <div class="Weight flex">
+                                    <li>Weight - 72kgs </li>
+                                 </div>
+                              </div>
+                           </div>
+                </div>
+            </div>
+            <div class="contact-details">
+              <div class="name-img">
+              <img src="images/phone2.png" alt="">
+              
+              </div>
+            </div>
+            <div class="mail-no">
+               <div class="edit" id="edit">
+                <h2>Contact Information</h2>
+                <div id="pen">
+                  <img src="images/pen5.jpg" alt="">
+                </div>
+                </div>
+                <ul>
+                  <li>Mobile : 8056350930</li>
+                  <li>Email : rehmanmech08@gmail.com</li>
+                </ul>
+            </div>
+            <div class="Education-career">
+              <div class="name-img">
+              <img src="images/education.png" alt="">
+             
+              </div>
+              <div class="basic-box">
+                  <div class="edit" id="edit">
+                <h2>Education and career</h2>
+                <div id="pen">
+                  <img src="images/pen5.jpg" alt="">
+                </div>
+                </div>
+                  <div class="AB">
+                              <div class="A">
+                                <div class="education flex">
+                                  <li>Highest Education - B.E</li>
+                                 </div>
+                                <div class="employed-in flex">
+                                  <li>Employed in - Private Sector</li>
+                                 </div>
+                                <div class="occupation flex">
+                                  <li>Occupation Details : press</li>
+                                </div>
+                                                                
+                              </div>
+                              <div class="B">
+                                 <div class="college flex">
+                                    <li>College/Institute : ALigarg</li>
+                                 </div>
+                                 <div class="education flex">
+                                    <li>Occupation : Media Professional</li>
+                                 </div>
+                                 <div class="job flex">
+                                    <li>Annual Income : Rs. 2 - 3 Lakh</li>
+                                 </div>
+                                 
+                              </div>
+                           </div>
+                </div>
+            </div>
+            <div class="religious">
+              <div class="name-img">
+              <img src="images/religious3.jfif" alt="">
+              
+              </div>
+              <div class="basic-box">
+                 <div class="edit" id="edit">
+                <h2>Religious and Life Style</h2>
+                <div id="pen">
+                  <img src="images/pen5.jpg" alt="">
+                </div>
+                </div>
+                  <div class="AB">
+                              <div class="A">
+                                <div class="name flex">
+                                  <li>Religious : Yes</li>
+                                 </div>
+                                <div class="age flex">
+                                  <li> Quran : Regular</li>
+                                 </div>
+                                <div class="height flex">
+                                  <li> Mother Tongue : Urdu</li>
+                                </div>
+                                 <div class="gender flex">
+                                    <li>Family Status : Middle Class</li>
+                                 </div>
+                                 <div class="marital-status flex">
+                                    <li>Drinking : Never</li>
+                                 </div>
+                              </div>
+                              <div class="B">
+                                 <div class="sect flex">
+                                    <li>Namaz : Regular</li>
+                                 </div>
+                                 <div class="education flex">
+                                    <li>Fasting : Regular</li>
+                                 </div>
+                                 <div class="job flex">
+                                    <li>Family Type : Joint Family</li>
+                                 </div>
+                                 <div class="Complexion flex">
+                                    <li>Smoking : Never</li>
+                                 </div>
+                                 <div class="Weight flex">
+                                    <li>Zakath - Regularly</li>
+                                 </div>
+                              </div>
+                           </div>
+                </div>
+
+            </div>
+            <div class="Location Information">
+              <div class="name-img">
+              <img src="images/location.png" alt="">
+              
+              </div>
+            </div>
+            <div class="mail-no">
+              <div class="edit" id="edit">
+                <h2>Address</h2>
+                <div id="pen">
+                  <img src="images/pen5.jpg" alt="">
+                </div>
+                </div>
+                <ul>
+                  <li>Present Address : Chennai, TamilNadu</li>
+                  <li>Permanent Address : Chidambaram, TamilNadu</li>
+                </ul>
+            </div>
+            <div class="family-details">
+              <div class="name-img">
+              <img src="images/family.png" alt="">
+              
+              </div>
+              <div class="basic-box">
+                 <div class="edit" id="edit">
+                <h2>Family Information</h2>
+                <div id="pen">
+                  <img src="images/pen5.jpg" alt="">
+                </div>
+                </div>
+                  <div class="AB">
+                              <div class="A">
+                                <div class="native flex">
+                                  <li> Native Place : Chidambaram, Tamilnadu</li>
+                                 </div>
+                                <div class="occupation flex">
+                                  <li> Father's Occupation : Driver</li>
+                                 </div>
+                                <div class="sister flex">
+                                  <li>Sister : 1 (Married)</li>
+                                </div>
+                                                                
+                              </div>
+                              <div class="B">
+                                 <div class="college flex">
+                                    <li>Father's name : Sardhar Khan</li>
+                                 </div>
+                                 <div class="education flex">
+                                    <li>Brother : 1 ( Married )</li>
+                                 </div>
+                                 <div class="job flex">
+                                    <li>About Family : Not filled</li>
+                                 </div>
+                                 
+                              </div>
+                           </div>
+                </div>
+            </div>
+
+            <div class="partner-expectation">
+              <div class="name-img">
+              <img src="images/women.jpg" alt="">
+              
+              </div>
+              <div class="basic-box">
+                 <div class="edit" id="edit">
+                <h2>Partner Preferences</h2>
+                <div id="pen">
+                  <img src="images/pen5.jpg" alt="">
+                </div>
+                </div>
+                  <div class="AB">
+                              <div class="A">
+                                <div class="native flex">
+                                  <li> Marital Status : Never Married</li>
+                                 </div>
+                                <div class="occupation flex">
+                                  <li> Age : Not filled / Didn't matter</li>
+                                 </div>
+                                <div class="sister flex">
+                                  <li>Education : Not filled / Didn't matter</li>
+                                </div>
+                                <div class="sister flex">
+                                  <li>Occupation : Not filled / Didn't matter</li>
+                                </div>
+                                <div class="sister flex">
+                                  <li> Mother Tongue : Not filled / Didn't matter</li>
+                                </div>
+                                <div class="sister flex">
+                                  <li>
+ Caste : Not filled / Didn't matter </li>
+                                </div>
+                                                                
+                              </div>
+                              <div class="B">
+                                 <div class="college flex">
+                                    <li>Anuual Income : Not filled / Didn't matter</li>
+                                 </div>
+                                 <div class="education flex">
+                                    <li> Complexion : Not filled / Didn't matter</li>
+                                 </div>
+                                 <div class="job flex">
+                                    <li> Sect : Sunni</li>
+                                 </div>
+                                 <div class="job flex">
+                                    <li> City : Not filled / Didn't matter</li>
+                                 </div>
+                                 <div class="job flex">
+                                    <li> State : Not filled / Didn't matter</li>
+                                 </div>
+                                 <div class="job flex">
+                                    <li> Country : India</li>
+                                 </div>
+                                 
+                              </div>
+                           </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      </section>
+
+     
+
+      <script>
+        const nav = document.getElementById("navbar");
+        const bar = document.getElementById("bar");
+
+        if (bar) {
+          bar.addEventListener("click", () => {
+            nav.classList.toggle("active");
+          });
+        }
+
+       
+        
+      </script>
+    </section>
+  </body>
+</html>

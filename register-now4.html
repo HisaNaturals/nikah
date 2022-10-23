@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="//geodata.solutions/includes/countrystatecity.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/register-now4.css" />
+  </head>
+  <body>
+    <section class="main" id="main">
+      <div class="topnav">
+        <img src="images/Logo-White.png" alt="" />
+        <div id="logout-button">
+          <a href="index.html"> <button>Logout</button></a>
+        </div>
+      </div>
+      <div class="phone" id="phone">
+        <h4>Phone Verification</h4>
+        <p>OTP Code has been sent to your number</p>
+        <div class="prompt">
+	<p>Enter the code generated on your mobile device below to log in!</p>
+   
+</div>
+
+<form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+	<input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+	<input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+	<input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+	<!-- <span class="splitter">&ndash;</span> -->
+	<input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+	<input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
+	<input type="text" id="digit-6" name="digit-6" data-previous="digit-5" />
+</form>
+
+<div class="buttons">
+   <button class="btn">Resend</button>
+   <a href="partner-page.html"><button class="btn1">Verify</button></a>
+</div>
+<div class="edit">
+   <p>Click here for edit phone number</p>
+   </div>
+   <div class="help">
+      <p>For Assistance, Please contact us @9999999999</p>
+   </div>
+        
+
+      <script src="js/jquery.js"></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/rocket-loader.min.js"></script>
+      <script src="js/main.js"></script>
+    </section>
+  </body>
+</html>
